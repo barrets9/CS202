@@ -1,0 +1,42 @@
+#wrapper{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 15% 75% 20%;
+    grid-template-rows:  minmax(25px, auto);
+    grid-column-gap: 25px;
+    grid-template-areas: 
+    "head head head"
+    "nav main section"
+    "nav main section"
+    "footer footer footer"
+}
+
+.header{
+    grid-area: head;
+    margin: auto;
+}
+
+.nav{
+    grid-area: nav;
+    position: fixed;
+}
+
+.main{
+    grid-area: main;
+    text-align: center;
+}
+
+.section{
+    grid-area: section;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+body{
+    position: absolute;
+    max-width: 1000px;
+}
